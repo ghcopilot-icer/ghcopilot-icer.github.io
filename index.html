@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="The Effects of GitHub Copilot on Computing Students' Programming Effectiveness, Efficiency, and Processes in Brownfield Programming Tasks"
+        />
+        <meta
+            name="keywords"
+            content="GitHub Copilot, brownfield programming, computing education, AI-assisted programming"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            The Effects of GitHub Copilot on Computing Students' Programming
+            Effectiveness, Efficiency, and Processes in Brownfield Programming
+            Tasks
+        </title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+        />
+        <link rel="stylesheet" href="./static/css/index.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">
+                                The Effects of GitHub Copilot on Computing
+                                Students' Programming Effectiveness, Efficiency,
+                                and Processes in Brownfield Programming Tasks
+                            </h1>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a href="#">Md Istiak Hossain Shihab</a
+                                    ><sup>1</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a href="#">Christopher Hundhausen</a
+                                    ><sup>1</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a href="#">Ahsun Tariq</a
+                                    ><sup>1</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a href="#">Summit Haque</a
+                                    ><sup>1</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a href="#">Yunhan Qiao</a
+                                    ><sup>1</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a href="#">Brian Mulanda Wise</a
+                                    ><sup>1</sup></span
+                                >
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block"
+                                    ><sup>1</sup>Oregon State University</span
+                                >
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- PDF Link. -->
+                                    <span class="link-block">
+                                        <a
+                                            href="#"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+                                    <span class="link-block">
+                                        <a
+                                            href="#"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span>
+                                    <!-- Code Link. -->
+                                    <span class="link-block">
+                                        <a
+                                            href="#"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                            <span>Code</span>
+                                        </a>
+                                    </span>
+                                    <!-- Dataset Link. -->
+                                    <span class="link-block">
+                                        <a
+                                            href="#"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="far fa-images"></i>
+                                            </span>
+                                            <span>Data</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <!-- Abstract. -->
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                When graduates of computing degree programs
+                                enter the software industry, they will most
+                                likely join teams working on legacy code bases
+                                developed by people other than themselves. In
+                                these so-called
+                                <em>brownfield software development settings</em
+                                >, generative artificial intelligence (GenAI)
+                                coding assistants like GitHub Copilot are
+                                rapidly transforming software development
+                                practices, yet the impact of GenAI on student
+                                programmers performing brownfield development
+                                tasks remains underexplored.
+                            </p>
+                            <p>
+                                This paper investigates how GitHub Copilot
+                                influences undergraduate students' programming
+                                performance, behaviors, and understanding when
+                                completing brownfield programming tasks, in
+                                which they add new code to an unfamiliar code
+                                base. We conducted a controlled experiment in
+                                which
+                                <strong
+                                    >10 undergraduate computer science
+                                    students</strong
+                                >
+                                completed isomorphic brownfield development
+                                tasks with and without Copilot in a legacy web
+                                application.
+                            </p>
+                            <p>
+                                Using a mixed-methods approach combining
+                                performance analysis, behavioral analysis, and
+                                exit interviews, we found that students
+                                completed tasks <strong>34.9% faster</strong> (p
+                                < 0.05) and made
+                                <strong>50% more solution progress</strong> (p <
+                                0.05) when using Copilot. Moreover, our analysis
+                                revealed that, when using Copilot, students
+                                spent
+                                <strong
+                                    >10.63% less time manually writing
+                                    code</strong
+                                >
+                                (p < 0.05), and
+                                <strong
+                                    >11.6% less time conducting web
+                                    searches</strong
+                                >
+                                (p < 0.05), providing evidence of a fundamental
+                                shift in how they engaged in programming.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Abstract. -->
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <h2 class="title is-3">Performance Results</h2>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                Students demonstrated significant improvements
+                                in both efficiency and correctness when using
+                                GitHub Copilot for brownfield programming tasks.
+                            </p>
+                        </div>
+
+                        <div class="columns is-vcentered interpolation-panel">
+                            <div class="column is-6 has-text-centered">
+                                <div class="interpolation-image">
+                                    <div
+                                        style="
+                                            border: 2px dashed #dbdbdb;
+                                            padding: 40px;
+                                            border-radius: 6px;
+                                        "
+                                    >
+                                        <p>
+                                            <strong>Figure 1a:</strong> Task
+                                            completion times
+                                        </p>
+                                        <p class="is-size-7">
+                                            Box plots showing 34.9% faster
+                                            completion with Copilot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6 has-text-centered">
+                                <div class="interpolation-image">
+                                    <div
+                                        style="
+                                            border: 2px dashed #dbdbdb;
+                                            padding: 40px;
+                                            border-radius: 6px;
+                                        "
+                                    >
+                                        <p>
+                                            <strong>Figure 1b:</strong> Tests
+                                            passed
+                                        </p>
+                                        <p class="is-size-7">
+                                            Box plots showing 50% more solution
+                                            progress with Copilot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <h2 class="title is-3">Programming Process Changes</h2>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                Our behavioral analysis revealed fundamental
+                                shifts in how students engage in programming
+                                when using Copilot. The traditional
+                                <em>read → understand → implement</em> workflow
+                                was replaced by a GenAI-mediated
+                                <em>prompt → view response → implement</em>
+                                pattern.
+                            </p>
+                        </div>
+
+                        <div class="columns is-vcentered interpolation-panel">
+                            <div class="column is-12 has-text-centered">
+                                <div class="interpolation-image">
+                                    <div
+                                        style="
+                                            border: 2px dashed #dbdbdb;
+                                            padding: 40px;
+                                            border-radius: 6px;
+                                        "
+                                    >
+                                        <p>
+                                            <strong>Figure 2:</strong> Activity
+                                            time distribution
+                                        </p>
+                                        <p class="is-size-7">
+                                            Comparison of time spent on
+                                            different programming activities
+                                            with and without Copilot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns is-vcentered interpolation-panel">
+                            <div class="column is-6 has-text-centered">
+                                <div class="interpolation-image">
+                                    <div
+                                        style="
+                                            border: 2px dashed #dbdbdb;
+                                            padding: 40px;
+                                            border-radius: 6px;
+                                        "
+                                    >
+                                        <p>
+                                            <strong>Figure 3:</strong> Code
+                                            writing methods
+                                        </p>
+                                        <p class="is-size-7">
+                                            Breakdown showing shift from manual
+                                            code entry to mixed methods with
+                                            Copilot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6 has-text-centered">
+                                <div class="interpolation-image">
+                                    <div
+                                        style="
+                                            border: 2px dashed #dbdbdb;
+                                            padding: 40px;
+                                            border-radius: 6px;
+                                        "
+                                    >
+                                        <p>
+                                            <strong>Figure 4:</strong> Workflow
+                                            transitions
+                                        </p>
+                                        <p class="is-size-7">
+                                            Markov transition diagrams showing
+                                            emergence of GenAI-mediated coding
+                                            cycle
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <h2 class="title is-3">Isomorphic Task Design</h2>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                To ensure fair comparison, we designed two
+                                equivalent brownfield programming tasks with
+                                identical complexity and scope. Both tasks
+                                required participants to implement new
+                                functionality across three sequential tasks with
+                                parallel structure.
+                            </p>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="box">
+                                    <h4 class="title is-5">
+                                        Add Distance Feature
+                                    </h4>
+                                    <div class="content">
+                                        <p>
+                                            <strong>Purpose:</strong> Capture
+                                            and validate user input for distance
+                                            value and save it with user data.
+                                        </p>
+                                        <div class="tags">
+                                            <span class="tag is-info"
+                                                >Task 1: Add Field, Radio
+                                                Buttons and Label to Form</span
+                                            >
+                                            <span class="tag is-info"
+                                                >Task 2: Convert Distances
+                                                between Miles & Kilometers</span
+                                            >
+                                            <span class="tag is-info"
+                                                >Task 3: Save "Distance" Field
+                                                with other user data</span
+                                            >
+                                        </div>
+                                        <p class="is-size-7">
+                                            <strong>Input Components:</strong>
+                                            Distance input field, Radio buttons
+                                            for unit selection<br />
+                                            <strong>Storage:</strong> Distance
+                                            saved in feet in Local Storage
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box">
+                                    <h4 class="title is-5">
+                                        Add Picture Feature
+                                    </h4>
+                                    <div class="content">
+                                        <p>
+                                            <strong>Purpose:</strong> Allow the
+                                            user to select and save a profile
+                                            picture (default or custom).
+                                        </p>
+                                        <div class="tags">
+                                            <span class="tag is-success"
+                                                >Task 1: Add Profile Picture
+                                                Selector to Form</span
+                                            >
+                                            <span class="tag is-success"
+                                                >Task 2: Update Profile Picture
+                                                based on Checked Status</span
+                                            >
+                                            <span class="tag is-success"
+                                                >Task 3: Save Profile Picture in
+                                                Local Storage</span
+                                            >
+                                        </div>
+                                        <p class="is-size-7">
+                                            <strong>Input Components:</strong>
+                                            Checkbox for custom picture
+                                            selection, file picker and image
+                                            preview<br />
+                                            <strong>Storage:</strong> Profile
+                                            picture saved in base64 in Local
+                                            Storage
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="title is-4">
+                            Implementation Complexity Analysis
+                        </h3>
+                        <div class="table-container">
+                            <table class="table is-fullwidth is-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Complexity Metric</th>
+                                        <th>Add Distance</th>
+                                        <th>Add Picture</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lines of code</td>
+                                        <td>80</td>
+                                        <td>71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Program statements</td>
+                                        <td>29</td>
+                                        <td>28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Variables</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Control structures</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Operations</td>
+                                        <td>23</td>
+                                        <td>21</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <h2 class="title is-3">Usage Strategy Differences</h2>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                Higher-performing students demonstrated more
+                                selective and strategic use of Copilot compared
+                                to lower performers. Top performers were more
+                                selective in their use of AI-generated code,
+                                preferring granular inline suggestions over
+                                adoption of code blocks wholesale.
+                            </p>
+                        </div>
+
+                        <div class="columns is-vcentered interpolation-panel">
+                            <div class="column is-12 has-text-centered">
+                                <div class="interpolation-image">
+                                    <div
+                                        style="
+                                            border: 2px dashed #dbdbdb;
+                                            padding: 40px;
+                                            border-radius: 6px;
+                                        "
+                                    >
+                                        <p>
+                                            <strong>Figure 5:</strong> Copilot
+                                            interaction strategies
+                                        </p>
+                                        <p class="is-size-7">
+                                            Comparison of higher and lower
+                                            performers' code writing methods
+                                            with Copilot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <h2 class="title is-3">Methodology</h2>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                We conducted a within-subjects, mixed-methods
+                                experimental study with two conditions:
+                                <strong>No Copilot</strong> (control) and
+                                <strong>Copilot</strong> (experimental). Ten
+                                undergraduate computer science students
+                                completed isomorphic brownfield front-end web
+                                development tasks in a legacy web application
+                                consisting of 3,818 lines of code.
+                            </p>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="notification is-light">
+                                    <h4 class="title is-6">Participants</h4>
+                                    <p>
+                                        10 undergraduate CS students (3rd/4th
+                                        year) with strong web development
+                                        background but minimal GenAI experience
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="notification is-light">
+                                    <h4 class="title is-6">Environment</h4>
+                                    <p>
+                                        AWS Workspace with Visual Studio Code,
+                                        GitHub Copilot extension, and legacy web
+                                        application
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="notification is-light">
+                                    <h4 class="title is-6">Design</h4>
+                                    <p>
+                                        Within-subjects experiment: No Copilot →
+                                        Copilot conditions with counterbalanced
+                                        task order
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="notification is-light">
+                                    <h4 class="title is-6">Analysis</h4>
+                                    <p>
+                                        Mixed-methods: performance metrics,
+                                        behavioral coding, Markov transition
+                                        analysis, exit interviews
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <h2 class="title is-3">Key Implications</h2>
+
+                        <div class="content has-text-justified">
+                            <p>
+                                Our findings reveal a crucial tension:
+                                <strong
+                                    >GenAI may promote brownfield programming
+                                    efficiency at the cost of diminished
+                                    learning</strong
+                                >. Students expressed concerns about not
+                                understanding how or why Copilot suggestions
+                                work, highlighting the need for computing
+                                educators to develop new pedagogical approaches.
+                            </p>
+
+                            <div class="notification is-warning is-light">
+                                <h4 class="title is-6">
+                                    The Productivity-Learning Tension
+                                </h4>
+                                <p>
+                                    While Copilot significantly enhanced
+                                    programming efficiency, students expressed
+                                    concerns about not understanding how or why
+                                    Copilot suggestions work, suggesting that
+                                    productivity gains may come at the cost of a
+                                    diminished understanding of the legacy code
+                                    base.
+                                </p>
+                            </div>
+
+                            <h3 class="title is-4">
+                                Recommendations for CS Education
+                            </h3>
+                            <ul>
+                                <li>
+                                    <strong
+                                        >Develop new learning outcomes and
+                                        pedagogy</strong
+                                    >
+                                    for GenAI-assisted programming that target
+                                    prompt engineering, comprehension, and
+                                    critical thinking skills
+                                </li>
+                                <li>
+                                    <strong
+                                        >Balance assistance and learning</strong
+                                    >
+                                    through carefully designed educational
+                                    activities that encourage students to
+                                    leverage GenAI while staying cognitively
+                                    engaged
+                                </li>
+                                <li>
+                                    <strong
+                                        >Focus on metacognitive skills</strong
+                                    >
+                                    to help students critically evaluate and
+                                    selectively integrate AI suggestions rather
+                                    than accepting them wholesale
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+                <pre><code>@article{shihab2025copilot,
+  author    = {Shihab, Md Istiak Hossain and Hundhausen, Christopher and Tariq, Ahsun and Haque, Summit and Qiao, Yunhan and Wise, Brian Mulanda},
+  title     = {The Effects of GitHub Copilot on Computing Students' Programming Effectiveness, Efficiency, and Processes in Brownfield Programming Tasks},
+  journal   = {ICER},
+  year      = {2025},
+}</code></pre>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a class="icon-link" href="#">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                    <a
+                        class="icon-link"
+                        href="#"
+                        class="external-link"
+                        disabled
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This website is licensed under a
+                                <a
+                                    rel="license"
+                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                    >Creative Commons Attribution-ShareAlike 4.0
+                                    International License</a
+                                >.
+                            </p>
+                            <p>
+                                Website source code based on the
+                                <a
+                                    href="https://github.com/nerfies/nerfies.github.io"
+                                    >Nerfies</a
+                                >
+                                project page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
