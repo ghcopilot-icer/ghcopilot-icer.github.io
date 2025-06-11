@@ -70,7 +70,7 @@
                                     ><sup>1</sup>,</span
                                 >
                                 <span class="author-block">
-                                    <a href="#">Brian Mulanda Wise</a
+                                    <a href="#">Brian Mulanda</a
                                     ><sup>1</sup></span
                                 >
                             </div>
@@ -84,7 +84,7 @@
                             <div class="column has-text-centered">
                                 <div class="publication-links">
                                     <!-- PDF Link. -->
-                                    <span class="link-block">
+                                    <!-- <span class="link-block">
                                         <a
                                             href="#"
                                             class="external-link button is-normal is-rounded is-dark"
@@ -105,7 +105,7 @@
                                             </span>
                                             <span>arXiv</span>
                                         </a>
-                                    </span>
+                                    </span> -->
                                     <!-- Code Link. -->
                                     <span class="link-block">
                                         <a
@@ -217,17 +217,19 @@
                                 GitHub Copilot for brownfield programming tasks.
                             </p>
                         </div>
-
                         <div class="columns is-vcentered interpolation-panel">
                             <div class="column is-6 has-text-centered">
                                 <div class="interpolation-image">
-                                    <div
-                                        style="
-                                            border: 2px dashed #dbdbdb;
-                                            padding: 40px;
-                                            border-radius: 6px;
-                                        "
-                                    >
+                                    <div>
+                                        <img
+                                            src="./static/images/task_completion_times-1.png"
+                                            alt="Box plots showing 34.9% faster
+                                            completion with Copilot"
+                                            style="
+                                                max-width: 100%;
+                                                height: 320px;
+                                            "
+                                        />
                                         <p>
                                             <strong>Figure 1a:</strong> Task
                                             completion times
@@ -241,13 +243,15 @@
                             </div>
                             <div class="column is-6 has-text-centered">
                                 <div class="interpolation-image">
-                                    <div
-                                        style="
-                                            border: 2px dashed #dbdbdb;
-                                            padding: 40px;
-                                            border-radius: 6px;
-                                        "
-                                    >
+                                    <div>
+                                        <img
+                                            src="./static/images/task_completion_tests-1.png"
+                                            alt="Box plots showing 50% more solution progress with Copilot"
+                                            style="
+                                                max-width: 100%;
+                                                height: 320px;
+                                            "
+                                        />
                                         <p>
                                             <strong>Figure 1b:</strong> Tests
                                             passed
@@ -286,13 +290,17 @@
                         <div class="columns is-vcentered interpolation-panel">
                             <div class="column is-12 has-text-centered">
                                 <div class="interpolation-image">
-                                    <div
-                                        style="
-                                            border: 2px dashed #dbdbdb;
-                                            padding: 40px;
-                                            border-radius: 6px;
-                                        "
-                                    >
+                                    <div>
+                                        <img
+                                            src="./static/images/write_method_comparison-1.png"
+                                            alt="Comparison of time spent on
+                                            different programming activities
+                                            with and without Copilot"
+                                            style="
+                                                max-width: 100%;
+                                                height: 240px;
+                                            "
+                                        />
                                         <p>
                                             <strong>Figure 2:</strong> Activity
                                             time distribution
@@ -308,15 +316,17 @@
                         </div>
 
                         <div class="columns is-vcentered interpolation-panel">
-                            <div class="column is-6 has-text-centered">
+                            <div class="column is-12 has-text-centered">
                                 <div class="interpolation-image">
-                                    <div
-                                        style="
-                                            border: 2px dashed #dbdbdb;
-                                            padding: 40px;
-                                            border-radius: 6px;
-                                        "
-                                    >
+                                    <div>
+                                        <img
+                                            src="./static/images/writing_methods-1.png"
+                                            alt="Breakdown showing shift from manual code entry to mixed methods with Copilot"
+                                            style="
+                                                max-width: 100%;
+                                                height: 240px;
+                                            "
+                                        />
                                         <p>
                                             <strong>Figure 3:</strong> Code
                                             writing methods
@@ -329,15 +339,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column is-6 has-text-centered">
+                        </div>
+                        <div class="columns is-vcentered interpolation-panel">
+                            <div class="column is-12 has-text-centered">
                                 <div class="interpolation-image">
-                                    <div
-                                        style="
-                                            border: 2px dashed #dbdbdb;
-                                            padding: 40px;
-                                            border-radius: 6px;
-                                        "
-                                    >
+                                    <div>
+                                        <img
+                                            src="./static/images/activity_transitions_without_copilot-1.png"
+                                            alt="Markov transition diagrams showing emergence of GenAI-mediated coding cycle"
+                                            style="
+                                                max-width: 100%;
+                                                height: 320px;
+                                            "
+                                        />
+                                        <img
+                                            src="./static/images/activity_transitions_with_copilot-1.png"
+                                            alt="Markov transition diagrams showing emergence of GenAI-mediated coding cycle"
+                                            style="
+                                                max-width: 100%;
+                                                height: 320px;
+                                            "
+                                        />
                                         <p>
                                             <strong>Figure 4:</strong> Workflow
                                             transitions
@@ -360,7 +382,7 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column is-full-width">
-                        <h2 class="title is-3">Isomorphic Task Design</h2>
+                        <h2 class="title is-3">Task Equivalence</h2>
 
                         <div class="content has-text-justified">
                             <p>
@@ -380,32 +402,12 @@
                                         Add Distance Feature
                                     </h4>
                                     <div class="content">
-                                        <p>
-                                            <strong>Purpose:</strong> Capture
-                                            and validate user input for distance
-                                            value and save it with user data.
-                                        </p>
-                                        <div class="tags">
-                                            <span class="tag is-info"
-                                                >Task 1: Add Field, Radio
-                                                Buttons and Label to Form</span
-                                            >
-                                            <span class="tag is-info"
-                                                >Task 2: Convert Distances
-                                                between Miles & Kilometers</span
-                                            >
-                                            <span class="tag is-info"
-                                                >Task 3: Save "Distance" Field
-                                                with other user data</span
-                                            >
-                                        </div>
-                                        <p class="is-size-7">
-                                            <strong>Input Components:</strong>
-                                            Distance input field, Radio buttons
-                                            for unit selection<br />
-                                            <strong>Storage:</strong> Distance
-                                            saved in feet in Local Storage
-                                        </p>
+                                        <embed
+                                            src="static/files/Add Distance.pdf"
+                                            type="application/pdf"
+                                            width="100%"
+                                            height="600px"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -415,34 +417,12 @@
                                         Add Picture Feature
                                     </h4>
                                     <div class="content">
-                                        <p>
-                                            <strong>Purpose:</strong> Allow the
-                                            user to select and save a profile
-                                            picture (default or custom).
-                                        </p>
-                                        <div class="tags">
-                                            <span class="tag is-success"
-                                                >Task 1: Add Profile Picture
-                                                Selector to Form</span
-                                            >
-                                            <span class="tag is-success"
-                                                >Task 2: Update Profile Picture
-                                                based on Checked Status</span
-                                            >
-                                            <span class="tag is-success"
-                                                >Task 3: Save Profile Picture in
-                                                Local Storage</span
-                                            >
-                                        </div>
-                                        <p class="is-size-7">
-                                            <strong>Input Components:</strong>
-                                            Checkbox for custom picture
-                                            selection, file picker and image
-                                            preview<br />
-                                            <strong>Storage:</strong> Profile
-                                            picture saved in base64 in Local
-                                            Storage
-                                        </p>
+                                        <embed
+                                            src="static/files/Add Picture_CoPilot.pdf"
+                                            type="application/pdf"
+                                            width="100%"
+                                            height="600px"
+                                        />
                                     </div>
                                 </div>
                             </div>
